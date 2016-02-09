@@ -1,0 +1,8 @@
+# Django / python built files #
+###############################
+
+bin/
+include/
+manage.py
+pip-selfcheck.json
+lib/
