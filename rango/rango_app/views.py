@@ -1,8 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
+
+context_dict = {'boldmessage': "I am bold font from the context"}
 
 def index(request):
-    return HttpResponse("Rango says hello world!<br/><a href='/rango/about/'>about</a>")
+    return render(request, 'rango/index.html', context_dict)
 
 
 def about(request):
