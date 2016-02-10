@@ -10,7 +10,12 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+STATIC_PATH = os.path.join(BASE_DIR, 'static')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Quick-start development settings - unsuitable for production
@@ -59,8 +64,12 @@ WSGI_APPLICATION = 'rango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'rango_demo',
+        'USER': 'rangouser',
+        'PASSWORD': 'doityourself',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
@@ -82,3 +91,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Set templates directories
+TEMPLATE_DIRS = (
+    TEMPLATE_PATH,
+)
+
+#Set static files directories
+STATICFILES_DIRS = (
+    STATIC_PATH,
+)
