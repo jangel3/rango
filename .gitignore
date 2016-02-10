@@ -6,4 +6,4 @@ include/
 manage.py
 pip-selfcheck.json
 lib/
-.idea
+.idea/
