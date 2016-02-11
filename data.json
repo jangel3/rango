@@ -19,21 +19,27 @@
   },
   {
     "fields": {
-      "name": "Python"
+      "name": "Python",
+      "views": 128,
+      "likes": 64
     },
     "model": "rango_app.category",
     "pk": 1
   },
   {
     "fields": {
-      "name": "Django"
+      "name": "Django",
+      "views": 64,
+      "likes": 32
     },
     "model": "rango_app.category",
     "pk": 2
   },
   {
     "fields": {
-      "name": "Other Frameworks"
+      "name": "Other Frameworks",
+      "views": 32,
+      "likes": 16
     },
     "model": "rango_app.category",
     "pk": 3
