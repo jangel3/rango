@@ -1,0 +1,131 @@
+[
+  {
+    "fields": {
+      "model": "category",
+      "name": "category",
+      "app_label": "rango_app"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 7
+  },
+  {
+    "fields": {
+      "model": "page",
+      "name": "page",
+      "app_label": "rango_app"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 8
+  },
+  {
+    "fields": {
+      "name": "Python"
+    },
+    "model": "rango_app.category",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "name": "Django"
+    },
+    "model": "rango_app.category",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "name": "Other Frameworks"
+    },
+    "model": "rango_app.category",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "category": 1,
+      "url": "",
+      "views": 0,
+      "title": ""
+    },
+    "model": "rango_app.page",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "category": 1,
+      "url": "http://docs.python.org/2/tutorial",
+      "views": 0,
+      "title": "Official Python Tutorial"
+    },
+    "model": "rango_app.page",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "category": 1,
+      "url": "http://www.greenteapress.com/thinkpython",
+      "views": 0,
+      "title": "How to Think like a Computer Scientist"
+    },
+    "model": "rango_app.page",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "category": 1,
+      "url": "http://www.korokithakis.net/tutorials/python/",
+      "views": 0,
+      "title": "Learn Python in 10 Minutes"
+    },
+    "model": "rango_app.page",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "category": 2,
+      "url": "https://docs.djangoproject.com/en/1.5/intro/tutorial01/",
+      "views": 0,
+      "title": "Official Django Tutorial"
+    },
+    "model": "rango_app.page",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "category": 2,
+      "url": "http://www.djangorocks.com/",
+      "views": 0,
+      "title": "Django Rocks"
+    },
+    "model": "rango_app.page",
+    "pk": 6
+  },
+  {
+    "fields": {
+      "category": 2,
+      "url": "http://www.tangowithdjango.com/",
+      "views": 0,
+      "title": "How toTango with Django"
+    },
+    "model": "rango_app.page",
+    "pk": 7
+  },
+  {
+    "fields": {
+      "category": 3,
+      "url": "http://bottlepy.org/docs/dev/",
+      "views": 0,
+      "title": "Bottle"
+    },
+    "model": "rango_app.page",
+    "pk": 8
+  },
+  {
+    "fields": {
+      "category": 3,
+      "url": "http://flask.pocoo.org",
+      "views": 0,
+      "title": "Flask"
+    },
+    "model": "rango_app.page",
+    "pk": 9
+  }
+]
