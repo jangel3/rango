@@ -9,11 +9,32 @@
         <!--<link rel="stylesheet" href="{% static 'css/base.css' %}"/>-->
     </head>
     <body>
-        <h1>Rango says...</h1>
-        <div>
-            hello world! <strong>{{ categories }}</strong><br/>
-            <a href="/rango/about/">About</a><br/>
-            <img src='{% static "images/rango.jpg" %}' alt="Picture of Rango"/>
-        </div>
+        <h1>Rango says...hello world! </h1>
+        <fieldset onabort="">
+            <legend>CATEGORIES</legend>
+            {% if categories %}
+                <ul>
+                    {% for c in categories %}
+                        <li><a href="/rango/category/{{ c.slug }}">{{ c.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <strong>There are no categories present.</strong>
+            {% endif %}
+        </fieldset>
+        <fieldset>
+            <legend>Pages</legend>
+            {% if pageViews %}
+                <ul>
+                    {% for p in pageViews %}
+                        <li><a href="{{ p.url }}">{{ p.title }}</a> </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <strong>There are no pages!</strong>
+            {% endif %}
+        </fieldset>
+        <a href="/rango/about/">About</a><br/>
+        <img src='{% static "images/rango.jpg" %}' alt="Picture of Rango"/>
     </body>
 </html>
