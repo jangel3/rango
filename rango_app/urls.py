@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url
-from rango.rango_app import views
+from rango_app import views
 
 
 urlpatterns = patterns('',

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rango.rango_app.models import Category, Page
+from rango_app.models import Category, Page
 
 
 def index(request):

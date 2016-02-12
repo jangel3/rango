@@ -10,7 +10,7 @@ urlpatterns = patterns('',
                        # url(r'^blog/', include('blog.urls')),
 
                        url(r'^admin/', include(admin.site.urls)),
-                       url(r'^rango/', include('rango.rango_app.urls')),
+                       url(r'^rango/', include('rango_app.urls')),
 )
 
 if settings.DEBUG:

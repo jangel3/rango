@@ -1,5 +1,5 @@
 from django.contrib import admin
-from rango.rango_app.models import Category, Page
+from rango_app.models import Category, Page
 
 # Register your models here.
 

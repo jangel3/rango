@@ -41,7 +41,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rango.rango_app',
+    'rango_project',
+    'rango_app',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -54,9 +55,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'rango.urls'
+ROOT_URLCONF = 'rango_project.urls'
 
-WSGI_APPLICATION = 'rango.wsgi.application'
+WSGI_APPLICATION = 'rango_project.wsgi.application'
 
 
 # Database
